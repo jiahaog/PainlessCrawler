@@ -1,0 +1,31 @@
+{
+  "name": "painless-crawler",
+  "version": "0.0.1",
+  "description": "Crawling without pain feels awesome",
+  "main": "PainlessCrawler.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "keywords": [
+    "crawler",
+    "node"
+  ],
+  "author": "Jia Hao",
+  "license": "ISC",
+  "dependencies": {
+    "async": "^1.4.0",
+    "cheerio": "^0.19.0",
+    "request": "^2.60.0",
+    "tldjs": "^1.5.3",
+    "valid-url": "^1.0.9"
+  },
+  "devDependencies": {},
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/skewedlines/PainlessCrawler.git"
+  },
+  "bugs": {
+    "url": "https://github.com/skewedlines/PainlessCrawler/issues"
+  },
+  "homepage": "https://github.com/skewedlines/PainlessCrawler#readme"
+}
