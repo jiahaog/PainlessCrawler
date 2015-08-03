@@ -50,3 +50,16 @@ crawler.queue(URL, function (error, response, linksFound, $) {
 ```
 
 ## Tests
+
+### NPM
+```bash
+$ npm test
+```
+
+### Docker
+
+Testing in [Docker](https://www.docker.com) is also supported
+```bash
+$ docker build -t painless-crawler-test ./test
+$ docker run painless-crawler-test
+```
