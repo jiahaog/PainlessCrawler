@@ -1,7 +1,12 @@
 
 # Painless Crawler
 
+![Build Status](https://travis-ci.org/skewedlines/PainlessCrawler.svg)
+
+[![NPM](https://nodei.co/npm/painless-crawler.png?downloads=true&downloadRank=true&stars=true)](https://nodei.co/npm/painless-crawler/)
+
 ## Introduction
+
 
 Working with some of the top Node.js crawlers on GitHub have led to much frustration with regards to getting something which simply works, and I ended up spending many hours playing around and figuring out how they were supposed to work.
 
