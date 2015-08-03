@@ -4,14 +4,14 @@
   "description": "Crawling without pain feels awesome",
   "main": "PainlessCrawler.js",
   "scripts": {
-    "test": "./node_modules/.bin/mocha --reporter spec"
+    "test": "mocha --reporter spec"
   },
   "keywords": [
     "crawler",
     "node"
   ],
   "author": "Jia Hao",
-  "license": "ISC",
+  "license": "MIT",
   "dependencies": {
     "async": "^1.4.0",
     "chai": "^3.2.0",
@@ -30,5 +30,8 @@
   "bugs": {
     "url": "https://github.com/skewedlines/PainlessCrawler/issues"
   },
-  "homepage": "https://github.com/skewedlines/PainlessCrawler#readme"
+  "homepage": "https://github.com/skewedlines/PainlessCrawler#readme",
+  "directories": {
+    "test": "test"
+  }
 }
