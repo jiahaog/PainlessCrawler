@@ -19,6 +19,7 @@
     "mocha": "^2.2.5",
     "request": "^2.60.0",
     "tldjs": "^1.5.3",
+    "underscore": "^1.8.3",
     "valid-url": "^1.0.9"
   },
   "devDependencies": {},
