@@ -73,15 +73,15 @@ var callback = function (error, response, linksFound, $) {
 
 
 
-**`error`String**
+**`error`** String
 
 Specifies the error (if any)
 
-**`response` Object**
+**`response`** Object
 
 Response for the http request made, an instance of [http.IncomingMessage](https://nodejs.org/api/http.html#http_http_incomingmessage)
 
-**`linksFound` Array**
+**`linksFound`** Array
 
 An array of hyperlinks that are found on the page. All links found will be validated, stripped of any fragment identifiers,  and relative links will be resolved to absolute ones.
 
@@ -102,10 +102,9 @@ If no callback is defined, an error will be thrown.
 
 ## Usage
 
-
 ### Constructor
 
-`new PainlessCrawler([[options, ] callback])`
+**`new PainlessCrawler([[options, ] callback])`**
 
 - `options` Object
 	- `maxConnections` Number default = 10
@@ -125,7 +124,7 @@ var crawler = new PainlessCrawler(options, callback)
 
 ### Queue
 
-`painlessCrawler.queue(task[, callback])`
+**`painlessCrawler.queue(task[, callback])`**
 
 - `task` String | Object | Array
 - `callback` Function
