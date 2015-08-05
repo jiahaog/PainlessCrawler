@@ -75,14 +75,16 @@ var callback = function (error, response, linksFound, $) {
 
 **`error`String**
 
+Specifies the error (if any)
 
-**`response` Object **
+**`response` Object**
 
 Response for the http request made, an instance of [http.IncomingMessage](https://nodejs.org/api/http.html#http_http_incomingmessage)
 
-**`linksFound` Array **
+**`linksFound` Array**
 
 An array of hyperlinks that are found on the page. All links found will be validated, stripped of any fragment identifiers,  and relative links will be resolved to absolute ones.
+
 
 **`$`**
 
