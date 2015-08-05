@@ -71,8 +71,6 @@ var callback = function (error, response, linksFound, $) {
 }
 ```
 
-
-
 **`error`** String
 
 Specifies the error (if any)
@@ -84,7 +82,6 @@ Response for the http request made, an instance of [http.IncomingMessage](https:
 **`linksFound`** Array
 
 An array of hyperlinks that are found on the page. All links found will be validated, stripped of any fragment identifiers,  and relative links will be resolved to absolute ones.
-
 
 **`$`**
 
@@ -98,7 +95,7 @@ Callbacks can be defined on different levels, and the crawler will search up the
 2. Parameter in `crawler.queue()`
 3. Constructor
 
-If no callback is defined, an error will be thrown.
+If a callback cannot be found after searching through the hierarchy, an error will be thrown.
 
 ## Usage
 
@@ -108,13 +105,23 @@ If no callback is defined, an error will be thrown.
 
 - `options` Object
 	- `maxConnections` Number default = 10
+	- `skipDuplicates` Boolean default = True 
 	- Any other arguments [accepted by Request](https://github.com/request/request#requestoptions-callback)
 - `callback` function
 
 
-Example:
-```javascript
+#### Options
+**`maxConnections`**
 
+Number of simultaneous connections to make
+
+**`skipDuplicates`** 
+
+Will skip visted pages without calling the callback. Pages are considered visited if the no error is thrown after processing it in the queue.
+
+
+#### Example:
+```javascript
 var options = {
 	maxConnections: 25;
 }
