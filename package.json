@@ -1,13 +1,15 @@
 {
   "name": "painless-crawler",
   "version": "0.0.2",
-  "description": "Crawling without pain feels awesome",
+  "description": "A painless Node.js web crawler that simply works",
   "main": "PainlessCrawler.js",
   "scripts": {
     "test": "mocha --reporter spec"
   },
   "keywords": [
     "crawler",
+    "scraper",
+    "jquery",
     "node"
   ],
   "author": "Jia Hao",
