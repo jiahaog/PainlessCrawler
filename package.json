@@ -2,7 +2,7 @@
   "name": "painless-crawler",
   "version": "0.0.2-alpha",
   "description": "A painless Node.js web crawler that simply works",
-  "main": "PainlessCrawler.js",
+  "main": "lib/PainlessCrawler.js",
   "scripts": {
     "test": "mocha --reporter spec"
   },
